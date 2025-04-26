@@ -23,14 +23,17 @@ class MarkdownPreviewer extends Component {
 
     return (
       <div>
-	<h1 style={{textAlign: 'center'}}>Text Editor</h1>
+	<div>
+		<h1 style={{textAlign: 'center'}}>Markdown Previewer</h1>
+	</div>
+	<h3 style={{textAlign: 'center'}}>Editor</h3>
         <textarea
 	  id="editor"
           value={markdown}
           onChange={this.handleChange}
           placeholder="Enter Markdown"
         />
-	<h1 style={{textAlign: 'center'}}>Markdown Previewer</h1>
+	<h3 style={{textAlign: 'center'}}>Previewer</h3>
         <div
 	  id="preview"
           dangerouslySetInnerHTML={{ __html: preview }}
