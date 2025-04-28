@@ -8,7 +8,9 @@ class MarkdownPreviewer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      markdown: '# Markdown Text'
+      markdown: '# Heading 1\n\n' + '## Heading 2\n\n' + '[Link Text](http://example.com)\n\n' + 'inline code, `ReactDOM.render(<App />, document.getElementById("root"))`\n\n' + '```javascript\n\n' +
+  'function returnCodeFromCodeblock() { return true; }\n\n' +
+  '```\n\n' + 'line break  \rend a line with two spaces followed by the enter key \n\n' + '1. List item\n\n' + '> This is a blockquote.\n\n' + '![Alt Text of image](http://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png)\n\n' + '**Bold Text**'
     };
     this.handleChange = this.handleChange.bind(this);
   }
